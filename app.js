@@ -14,6 +14,11 @@ window.addEventListener('keydown', (e) => {
 const buttonEl = document.querySelectorAll('div');
 buttonEl.forEach((element) =>{
   element.addEventListener('click', ()=>{
-    
+    const audio = document.querySelectorAll(`audio`);
+    audio.forEach((items) => {
+      if(items.dataset.key == element.dataset.key){
+        items.play();
+      }
+    })
   })
-})``
+})
