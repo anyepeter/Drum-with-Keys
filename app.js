@@ -10,3 +10,10 @@ window.addEventListener('keydown', (e) => {
     buttonPress.classList.remove('play-color');
   }, 50);
 });
+
+const buttonEl = document.querySelectorAll('div');
+buttonEl.forEach((element) =>{
+  element.addEventListener('click', ()=>{
+    
+  })
+})``
